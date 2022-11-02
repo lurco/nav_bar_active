@@ -1,0 +1,35 @@
+.header {
+    width: 50vw;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: tan;
+    padding: 2rem;
+}
+
+.menu__item {
+    color: royalblue;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu__item--active, .menu__item:hover {
+    font-weight: bolder;
+    position: relative;
+    transition: font-weight 400ms;
+}
+
+.menu__item--active::after, .menu__item:hover::after {
+    content: "";
+    width: 120%;
+    height: 2px;
+    display: inline-block;
+    background-color: royalblue;
+    position: absolute;
+    left: -10%;
+    bottom: -10%;
+}
