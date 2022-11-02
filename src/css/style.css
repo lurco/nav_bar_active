@@ -10,7 +10,7 @@
     padding: 1rem;
 }
 
-.menu__item {
+.menu .menu__item {
     color: royalblue;
     font-family: sans-serif;
     text-decoration: none;
@@ -18,12 +18,12 @@
     position: relative;
 }
 
-.menu__item--active, .menu__item:hover {
+.menu menu__item.menu__item--active, .menu__item:hover {
     /*font-weight: bolder;*/
     position: relative;
 }
 
-.menu__item::after{
+.menu .menu__item::after{
     content: "";
     width: 120%;
     height: 1px;
@@ -34,7 +34,7 @@
     bottom: -30%;
 }
 
-.menu__item--active::after, .menu__item:hover::after {
+.menu menu__item.menu__item--active::after, .menu__item:hover::after {
     content: "";
     width: 120%;
     height: 1px;
